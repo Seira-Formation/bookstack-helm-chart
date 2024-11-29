@@ -1,7 +1,8 @@
-# Kubernetes Helm Charts by Stellar Hosted
+# Kubernetes Bookstack Helm Chart by Seira-Formation
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![](https://github.com/stellarhosted/helm-charts/workflows/Release%20Charts/badge.svg?branch=main)](https://github.com/stellarhosted/helm-charts/actions)
+
+This repo is a fork of https://github.com/stellarhosted/helm-charts
 
 ## Helm 3
 
@@ -11,18 +12,18 @@
 The following command allows you to download and install all the charts from this repository:
 
 ```console
-$ helm repo add stellarhosted https://stellarhosted.github.io/helm-charts
+$ helm repo add seira-formation https://seira-formation.github.io/bookstack-helm-chart/tarballs
 ```
 
 ## Search charts
 
-You can then run `helm search repo stellarhosted` to see the charts.
+You can then run `helm search repo seira-formation` to see the charts.
 
 ## Charts
 
 ### BookStack
 
-For installation and upgrading instructions see [BookStack chart readme](https://github.com/stellarhosted/helm-charts/blob/main/charts/bookstack/README.md).
+For installation and upgrading instructions see [BookStack chart readme](https://github.com/seira-formation/helm-charts/blob/main/charts/bookstack/README.md).
 
 ## License
 
