@@ -6,7 +6,7 @@ type: application
 version: 1.7.0
 home: https://www.bookstackapp.com/
 appVersion: "2024.10"
-icon: https://media.githubusercontent.com/media/BookStackApp/website/master/static/images/logo.png
+icon: https://github.com/BookStackApp/website/blob/main/static/images/logo.png
 sources:
   - https://github.com/BookStackApp/BookStack
 maintainers:
