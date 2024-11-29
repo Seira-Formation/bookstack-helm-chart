@@ -10,6 +10,7 @@ helm package ./charts/bookstack/ -d tarballs
     helm repo index --url https://seira-formation.github.io/bookstack-helm-chart/tarballs charts/bookstack/
     mv  charts/bookstack/index.yaml tarballs/
   #+END_SRC
+- remove mariadb entry from [[file:tarballs/index.yaml][index.yaml]]
 - may be clean up old tarballs
 - commit the changes
 - push main branch
