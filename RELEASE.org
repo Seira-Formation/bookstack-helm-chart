@@ -1,0 +1,16 @@
+* Release process
+
+- Update chart version in [[file:charts/bookstack/Chart.yaml][Chart.yaml]]
+- generate new tarball:
+  #+BEGIN_SRC shell :results verbatim 
+helm package ./charts/bookstack/ -d tarballs
+  #+END_SRC
+- if necessary, update index file:
+  #+BEGIN_SRC shell :results verbatim 
+    helm repo index --url https://seira-formation.github.io/bookstack-helm-chart/tarballs charts/bookstack/
+    mv  charts/bookstack/index.yaml tarballs/
+  #+END_SRC
+- may be clean up old tarballs
+- commit the changes
+- push main branch
+- wait a few minutes to get the new release from https://seira-formation.github.io/
